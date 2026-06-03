@@ -5,9 +5,10 @@ import sitemap from 'vite-plugin-sitemap';
 export default defineConfig({
   base: './',
   plugins: [
-    webfontDownload([
-      'https://fonts.googleapis.com/css2?family=Barlow&display=swap',
-    ]),
+    webfontDownload(
+      ['https://fonts.googleapis.com/css2?family=Barlow&display=swap'],
+      { assetsSubfolder: 'fonts' },
+    ),
     sitemap({
       hostname: 'https://pmbfsa.github.io/picture-in-picture/',
       outDir: 'docs',
