@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="%BASE_URL%favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>template</title>
+    <title>Picture in Picture</title>
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <main></main>
+    <main>
+      <!-- VIDEO -->
+      <video
+        id="video"
+        width="360"
+        height="640"
+        controls
+        autoplay
+        hidden
+      ></video>
+      <!-- BUTTON -->
+      <div class="button-container">
+        <button id="button">START</button>
+      </div>
+    </main>
   </body>
 </html>
